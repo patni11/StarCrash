@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PowersView" customModule="Star_Crash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="637" height="149"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzQ-31-lEu">
+                    <rect key="frame" x="226" y="9" width="185" height="48"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Speed Up">
+                            <attributes>
+                                <color key="NSColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="41" name="RussoOne-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aJs-SH-JCg">
+                    <rect key="frame" x="239" y="99" width="158" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="158" id="2Vk-XS-HTD"/>
+                        <constraint firstAttribute="height" constant="40" id="SOl-wZ-mRD"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="cw1-je-1nW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <state key="normal" title="30">
+                        <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buy:" destination="iN0-l3-epB" eventType="touchUpInside" id="8AN-L2-rcK"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Component (6).png" translatesAutoresizingMaskIntoConstraints="NO" id="pTM-6K-Tmf">
+                    <rect key="frame" x="195" y="99" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pTM-6K-Tmf" secondAttribute="height" multiplier="1:1" id="Wgz-vp-ukq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speeds up the game making you invulnerable to any obstacles except meteoroids" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhs-bJ-rN6">
+                    <rect key="frame" x="20" y="10" width="173" height="129"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VTg-6f-qR4">
+                    <rect key="frame" x="487" y="10" width="130" height="129"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="VTg-6f-qR4" secondAttribute="height" multiplier="130:129" id="WRC-5c-dli"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="pTM-6K-Tmf" firstAttribute="height" secondItem="aJs-SH-JCg" secondAttribute="height" id="2iU-Lk-H4g"/>
+                <constraint firstItem="aJs-SH-JCg" firstAttribute="bottom" secondItem="pTM-6K-Tmf" secondAttribute="bottom" id="5BZ-zU-KIf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aJs-SH-JCg" secondAttribute="bottom" constant="10" id="63F-ym-o6i"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hhs-bJ-rN6" secondAttribute="bottom" constant="10" id="8cr-NC-rAx"/>
+                <constraint firstItem="pzQ-31-lEu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EH7-QE-H85"/>
+                <constraint firstItem="hhs-bJ-rN6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Fs1-Hr-N62"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pTM-6K-Tmf" secondAttribute="bottom" constant="10" id="Kyt-nT-5Ts"/>
+                <constraint firstItem="aJs-SH-JCg" firstAttribute="leading" secondItem="pTM-6K-Tmf" secondAttribute="trailing" constant="4" id="Q3J-lp-oFE"/>
+                <constraint firstItem="aJs-SH-JCg" firstAttribute="top" secondItem="pTM-6K-Tmf" secondAttribute="top" id="SMv-gq-CqX"/>
+                <constraint firstItem="pzQ-31-lEu" firstAttribute="leading" secondItem="hhs-bJ-rN6" secondAttribute="trailing" constant="33" id="YPW-6o-amx"/>
+                <constraint firstItem="pzQ-31-lEu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="9" id="cA6-zN-v8A"/>
+                <constraint firstItem="VTg-6f-qR4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="cFN-h6-bkb"/>
+                <constraint firstItem="hhs-bJ-rN6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="gOK-sB-mT6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VTg-6f-qR4" secondAttribute="bottom" constant="10" id="hCR-4J-VHr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VTg-6f-qR4" secondAttribute="trailing" constant="20" id="vKf-y2-u3V"/>
+                <constraint firstItem="aJs-SH-JCg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wqm-xk-l14"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="BuyOutlet" destination="aJs-SH-JCg" id="IDi-4p-Fpr"/>
+                <outlet property="Description" destination="hhs-bJ-rN6" id="hk9-oG-OdW"/>
+                <outlet property="Name" destination="pzQ-31-lEu" id="Eef-uE-hxd"/>
+                <outlet property="PowerImage" destination="VTg-6f-qR4" id="xd4-DQ-Lnn"/>
+                <outlet property="img" destination="pTM-6K-Tmf" id="2lR-RM-JXW"/>
+            </connections>
+            <point key="canvasLocation" x="252.5" y="225.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Component (6).png" width="335" height="335"/>
+    </resources>
+</document>
